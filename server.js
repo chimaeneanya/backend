@@ -12,7 +12,7 @@ const app = express();
 
 
 // MongoDB Atlas connection
-const MONGO_URI = 'mongodb+srv://ugonnaozie:Rolemodel2004@cluster0.mhhkr.mongodb.net/'; //  MongoDB Atlas URI
+const MONGO_URI = 'mongodb+srv://chimaeric123:Livinus10@cluster0.c6vsr.mongodb.net/'; //  MongoDB Atlas URI
 const client = new MongoClient(MONGO_URI);
 
 let productsCollection;
