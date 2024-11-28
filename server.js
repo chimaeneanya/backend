@@ -103,15 +103,15 @@ app.put('/api/products/:id', async (req, res) => {
 });
 
 // API route to fetch all products
-app.get('/api/products', async (req, res) => {
-  try {
-    const products = await productsCollection.find({}).toArray(); // Fetch all products
-    res.json(products);
-  } catch (error) {
-    console.error('Error fetching products:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
-  }
-});
+// app.get('/api/products', async (req, res) => {
+//   try {
+//     const products = await productsCollection.find({}).toArray(); // Fetch all products
+//     res.json(products);
+//   } catch (error) {
+//     console.error('Error fetching products:', error);
+//     res.status(500).json({ error: 'Internal Server Error' });
+//   }
+// });
 
 
 
