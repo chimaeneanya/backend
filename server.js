@@ -10,7 +10,6 @@ const { MongoClient } = require('mongodb');
 const app = express();
 
 
-
 // MongoDB Atlas connection
 const MONGO_URI = 'mongodb+srv://chimaeric123:Livinus10@cluster0.c6vsr.mongodb.net/'; //  MongoDB Atlas URI
 const client = new MongoClient(MONGO_URI);
@@ -112,8 +111,6 @@ app.get('/api/products', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
-
-
 
 
 // Start the server
